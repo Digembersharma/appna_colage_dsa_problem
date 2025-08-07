@@ -13,11 +13,11 @@ public class swap_vowels {
 	        if(!not_vowel(ch[i])){
 	            i++;
 	        }
-	        if(!not_vowel(ch[j])){
+	        else if(!not_vowel(ch[j])){
 	            j--;
 	        }
 	        
-	        if(not_vowel(ch[i]) && not_vowel(ch[j])){
+	        else {
 	            char temp = ch[i];
 	            ch[i]= ch[j];
 	            ch[j]=temp;
